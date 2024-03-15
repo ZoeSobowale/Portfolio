@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -11,11 +12,6 @@ function App() {
   return (
     <>
     <div>
-    <Navbar className="bg-body-tertiary">
-        <Container>
-            Zoe Sobowale
-        </Container>
-      </Navbar>
       <h1>Welcome to My Portfolio</h1>
       <p>My Name is Zoe Sobowale</p>
       <a href="https://github.com/ZoeSobowale"> My GitHub</a>
