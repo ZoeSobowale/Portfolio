@@ -1,6 +1,6 @@
 import React from 'react';
 
-function App() {
+function Home() {
 
   return (
     <>
@@ -13,13 +13,14 @@ function App() {
       <a href="https://www.youtube.com/channel/UCmBRnQ77aZ2HIAjlY7NTTzQ">My Youtube</a>
       <br />
 
+
     <div>
-      <h2>My <CV></CV></h2>
-      <p>Include your up-to-date projects and professional experience here.</p>
-      <a href="" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
+      <h2>My CV</h2>
+      <p>My Updated CV</p>
+      <a href="zoeportfolio\src\assets\Iyinoluwa-Sobowale.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
     </div>
     </>
   )
 }
 
-export default App
+export default Home
