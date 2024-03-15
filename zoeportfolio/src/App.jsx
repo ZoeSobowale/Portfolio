@@ -1,23 +1,19 @@
-import { useState } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css'
+import Home from './components/Home';
+import Projects from './components/Projects';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <div>
-      <h1>Welcome to My Portfolio</h1>
-      <p>My Name is Zoe Sobowale</p>
-      <a href="https://github.com/ZoeSobowale"> My GitHub</a>
-      <br />
-      <a href="https://www.linkedin.com/in/zoe-sobowale/">LinkedIn</a>
-      <br />
-      <a href="https://www.youtube.com/channel/UCmBRnQ77aZ2HIAjlY7NTTzQ">My Youtube</a>
-      <br />
-    </div>
-    </>
-  )
-}
-
+    return (
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/projects" component={Projects} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 export default App
