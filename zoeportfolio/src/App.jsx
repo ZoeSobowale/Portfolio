@@ -2,32 +2,29 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div>
+    <Navbar className="bg-body-tertiary">
+        <Container>
+            Zoe Sobowale
+        </Container>
+      </Navbar>
+      <h1>Welcome to My Portfolio</h1>
+      <p>My Name is Zoe Sobowale</p>
+      <a href="https://github.com/ZoeSobowale"> My GitHub</a>
+      <br />
+      <a href="https://www.linkedin.com/in/zoe-sobowale/">LinkedIn</a>
+      <br />
+      <a href="https://www.youtube.com/channel/UCmBRnQ77aZ2HIAjlY7NTTzQ">My Youtube</a>
+      <br />
+    </div>
     </>
   )
 }
